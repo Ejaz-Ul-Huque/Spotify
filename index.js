@@ -53,7 +53,7 @@ console.log("Hello JavaScript")
     
 // }
 
-let songs = [new Audio('mp3/1.mp3') , new Audio('mp3/2.mp3') , new Audio('mp3/3.mp3') , new Audio('mp3/4.mp3') , new Audio('mp3/5.mp3') , new Audio('mp3/6.mp3') ]
+let songs = [new Audio('1.mp3') , new Audio('2.mp3') , new Audio('3.mp3') , new Audio('4.mp3') , new Audio('5.mp3') , new Audio('6.mp3') ]
 
 // songs.push(new Audio('1.mp3'))
 
