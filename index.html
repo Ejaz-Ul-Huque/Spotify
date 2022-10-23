@@ -1,0 +1,156 @@
+<html>
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Spotify</title>
+    <script src="index.js"> 
+    </script>
+</head>
+
+<body class="flex w-screen overflow-x-hidden overflow-y-hidden">
+    <div
+        class="flex w-screen px-6 py-2 z-10 items-center justify-between fixed bottom-0 bg-gradient-to-r from-pink-500 to-blue-500">
+        <div class="text-white text-base">
+            <p>PREVIEW FOR SPOTIFY</p>
+            <p>
+                Sign up to get unlimited songs and podcasts with occasional ads. No
+                credit card needed
+            </p>
+        </div>
+        <div class="">
+            <button class="bg-white rounded-full text-black px-8 py-3 text-base font-bold">
+                Sign up free
+            </button>
+        </div>
+    </div>
+    <div class="h-screen w-1/6 bg-black ">
+        <img src="spotify1.png" class="h-10 m-5" /><br />
+        <div class="flex items-center cursor-pointer">
+            <img src="home.jpg" class="h-7 ml-5" />
+            <div class="text-white ml-5">
+                <h1 class=" ">Home</h1>
+            </div>
+        </div>
+        <br />
+
+        <div class="flex items-center">
+            <img src="search.png" class="h-7 ml-5" />
+            <div class="text-white ml-5 cursor-pointer">
+                <h1 class=" ">Search</h1>
+            </div>
+        </div>
+        <br />
+
+        <div class="flex items-center">
+            <img src="library.png" class="h-7 ml-5" />
+            <div class="text-white ml-5 cursor-pointer">
+                <h1 class=" ">Your Library</h1>
+            </div>
+        </div>
+        <br /><br />
+
+        <div class="flex items-center">
+            <img src="playlist.png" class="h-7 ml-5" />
+            <div class="text-white ml-5 cursor-pointer">
+                <h1 class=" ">Create Playlist</h1>
+            </div>
+        </div>
+        <br />
+
+        <div class="flex items-center">
+            <img src="liked.jpg" class="h-7 ml-5" />
+            <div class="text-white ml-5 cursor-pointer">
+                <h1 class=" ">Liked Songs</h1>
+            </div>
+        </div>
+    </div>
+    <div class="h-screen w-full overflow-y-scroll relative bg-[#1d1d1d]">
+        <div class="sticky top-0 h-12 w-full bg-black flex">
+            <div>
+                <img src="v3.png" class="h-10 ml-10" />
+            </div>
+
+            <div>
+                <img src="v4.png" class="h-10" />
+            </div>
+        </div>
+
+        <div class="text-white px-4 py-6">
+            <p id="head1" class="text-2xl font-bold mb-4">Spotify Playlist</p>
+            <div class="grid grid-rows1 max-w-max grid-cols-6 gap-8 ">
+                <div class=" bg-gradient-to-b group via-orange-500 hover:to-orange-500 space-y-2 relative from-black max-w-max to-black/50 cursor-pointer p-4 rounded-md transform transition duration-300 ease-in-out hover:scale-105">
+                    <!-- transform transition duration-300 ease-in-out hover:scale-105  -->
+                    <img src="naruto2.jpg" class="h-44 w-44 rounded-sm object-cover" >
+                    <h1 class=" text-lg font-bold"> Call Of Silence</h1>
+                    <p class="text-gray-200/80">Sushi</p> 
+                    <button onclick="Play(1)" class=" hidden group-hover:block bg-lime-500 rounded-full absolute top-1/2  right-4 text-black  font-bold"  ><img src="btn2.png" class="h-12 w-12 rounded-full" ></button>
+                </div>
+               
+                <div onclick="Play(2)" class=" bg-gradient-to-b group via-red-600 hover:to-red-700 space-y-2 relative from-black max-w-max to-black/50 cursor-pointer p-4 rounded-md transform transition duration-300 ease-in-out hover:scale-105">
+                    <!-- transform transition duration-300 ease-in-out hover:scale-105  -->
+                    <img src="itachi.jpg" class="h-44 w-44 rounded-sm object-cover" >
+                    <h1 class=" text-lg font-medium">All The Things She Said</h1>
+                    <p class="text-gray-200/80">t.A.T.u</p> 
+                    <button class=" hidden group-hover:block bg-lime-500 rounded-full absolute top-1/2  right-4 text-black  font-bold" ><img src="btn2.png" class="h-12 w-12 rounded-full"></button>
+                </div>
+
+                <div onclick="Play(3)" class=" bg-gradient-to-b group via-red-700 hover:to-red-600 space-y-2 relative from-black max-w-max to-black/50 cursor-pointer p-4 rounded-md transform transition duration-300 ease-in-out hover:scale-105">
+                    <!-- transform transition duration-300 ease-in-out hover:scale-105  -->
+                    <img src="obito1.jpg" class="h-44 w-44 rounded-sm object-cover" >
+                    <h1 class=" text-lg font-bold">Fairy Tale</h1>
+                    <p class="text-gray-200/80">Alexander Rybak</p> 
+                    <button class=" hidden group-hover:block bg-lime-500 rounded-full absolute top-1/2  right-4 text-black  font-bold"><img src="btn2.png" class="h-12 w-12 rounded-full"></button>
+                </div>
+
+                <div onclick="Play(4)" class=" bg-gradient-to-b group via-teal-300 hover:to-teal-800 space-y-2 relative from-black max-w-max to-black/50 cursor-pointer p-4 rounded-md transform transition duration-300 ease-in-out hover:scale-105">
+                    <!-- transform transition duration-300 ease-in-out hover:scale-105  -->
+                    <img src="kakashi.jpg" class="h-44 w-44 rounded-sm object-cover" >
+                    <h1 class=" text-lg font-bold">Carol Of The Bells</h1>
+                    <p class="text-gray-200/80">Lindsey Stirling</p> 
+                    <button class=" hidden group-hover:block bg-lime-500 rounded-full absolute top-1/2  right-4 text-black  font-bold"><img src="btn2.png" class="h-12 w-12 rounded-full"></button>
+                </div>
+
+                <div onclick="Play(5)" class=" bg-gradient-to-b group via-rose-500 hover:to-red-500 space-y-2 relative from-black max-w-max to-black/50 cursor-pointer p-4 rounded-md transform transition duration-300 ease-in-out hover:scale-105">
+                    <!-- transform transition duration-300 ease-in-out hover:scale-105  -->
+                    <img src="pain.jpg" class="h-44 w-44 rounded-sm object-cover" >
+                    <h1 class=" text-lg font-bold">Akatsuki </h1>
+                    <p class="text-gray-200/80">GAMIIX</p> 
+                    <button class=" hidden group-hover:block bg-lime-500 rounded-full absolute top-1/2  right-4 text-black  font-bold"><img src="btn2.png" class="h-12 w-12 rounded-full"></button>
+                </div>
+
+                <div onclick="Play(6)" class=" bg-gradient-to-b group via-fuchsia-500 hover:to-fuchsia-500 space-y-2 relative from-black max-w-max to-black/50 cursor-pointer p-4 rounded-md transform transition duration-300 ease-in-out hover:scale-105">
+                    <!-- transform transition duration-300 ease-in-out hover:scale-105  -->
+                    <img src="sasuke.jpg" class="h-44 w-44 rounded-sm object-cover" >
+                    <h1 class=" text-lg font-bold">Set Fire To The Rain</h1>
+                    <p class="text-gray-200/80">Adele</p> 
+                    <button class=" hidden group-hover:block bg-lime-500 rounded-full absolute top-1/2  right-4 text-black  font-bold"><img src="btn2.png" class="h-12 w-12 rounded-full"></button>
+
+            </div>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+    </div>
+    </div>
+    </div>
+    <!-- <script>
+        document.getElementById("head1").innerHTML = "Spotify Playlists";
+        
+    </script>  -->
+</body>
+
+</html>
